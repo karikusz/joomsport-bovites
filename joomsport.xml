@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4.4" method="upgrade">
+    <name>JoomSport</name>
+    <creationDate>March 2023</creationDate>
+    <author>BearDev</author>
+    <authorEmail>sales@beardev.com</authorEmail>
+    <authorUrl>www.beardev.com</authorUrl>
+    <version>5.7</version>
+    <description>JoomSport - effective sport league solution</description>
+    <license>http://joomsport.com/license.html GNU/GPL</license>
+    <files folder="frontend">
+        <filename>joomsport.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>helpers</folder>
+        <folder>img</folder>
+        <folder>js</folder>
+        <folder>views</folder>
+        <folder>includes</folder>
+        <folder>controllers</folder>
+        <folder>models</folder>
+        <folder>tables</folder>
+        <folder>sportleague</folder>
+        <folder>override</folder>
+    </files>
+    <scriptfile>install.php</scriptfile> 
+    <!-- SQL query files to execute on installation -->
+    <install>
+            <sql>
+                    <file charset="utf8" driver="mysql">install.sql</file>
+
+            </sql>
+    </install>
+
+    <languages>
+        <language tag="en-GB">Language/FE/en-GB.com_joomsport.ini</language>
+        <language tag="fr-FR">Language/FE/fr-FR.com_joomsport.ini</language>
+        <language tag="it-IT">Language/FE/it-IT.com_joomsport.ini</language>
+        <language tag="ru-RU">Language/FE/ru-RU.com_joomsport.ini</language>
+        <language tag="el-GR">Language/FE/el-GR.com_joomsport.ini</language>
+        <language tag="es-ES">Language/FE/es-ES.com_joomsport.ini</language>
+        <language tag="de-DE">Language/FE/de-DE.com_joomsport.ini</language>
+        <language tag="sv-SE">Language/FE/sv-SE.com_joomsport.ini</language>
+        <language tag="pt-PT">Language/FE/pt-PT.com_joomsport.ini</language>
+        <language tag="pl-PL">Language/FE/pl-PL.com_joomsport.ini</language>
+        <language tag="nl-NL">Language/FE/nl-NL.com_joomsport.ini</language>
+        <language tag="hu-HU">Language/FE/hu-HU.com_joomsport.ini</language>
+        <language tag="cs-CZ">Language/FE/cs-CZ.com_joomsport.ini</language>
+        <language tag="sk-SK">Language/FE/sk-SK.com_joomsport.ini</language>
+        <language tag="sl-SI">Language/FE/sl-SI.com_joomsport.ini</language>
+        <language tag="vi-VI">Language/FE/vi-VI.com_joomsport.ini</language>
+        <language tag="zh-CN">Language/FE/zh-CN.com_joomsport.ini</language>
+        <language tag="lv-LV">Language/FE/lv-LV.com_joomsport.ini</language>
+        <language tag="ar-AA">Language/FE/ar-AA.com_joomsport.ini</language>
+        <language tag="bg-BG">Language/FE/bg-BG.com_joomsport.ini</language>
+        <language tag="pt-BR">Language/FE/pt-BR.com_joomsport.ini</language>
+        <language tag="hr-HR">Language/FE/hr-HR.com_joomsport.ini</language>
+    </languages>		
+
+  <administration>
+    <menu img="components/com_joomsport/img/beardev.gif" alt="JoomSport/JoomSport">COM_JOOMSPORT</menu>
+	<submenu>
+            <menu task="tour_list" img="components/com_joomsport/img/tourn16.png">TOURNAMENT</menu>
+            <menu task="season_list" img="components/com_joomsport/img/season16.png">SEASON</menu>
+            <menu task="matchday_list" img="components/com_joomsport/img/match16.png">MATCHDAY</menu>
+            <menu task="team_list" img="components/com_joomsport/img/team16.png">TEAMS</menu>
+            <menu task="player_list" img="components/com_joomsport/img/players16.png">PLAYERS</menu>
+            <menu task="adons" img="components/com_joomsport/img/config16.png">ADDONS</menu>
+            <menu task="config" img="components/com_joomsport/img/config16.png">CONFIGURATION</menu>
+            
+            <menu task="help" img="components/com_joomsport/img/about16.png">HELP</menu>
+        </submenu>
+    <files>
+        <folder>img</folder>
+        <filename>controller.php</filename>
+        <filename>joomsport.php</filename>
+        <filename>jbl_start.php</filename>
+        <filename>jbl_help.php</filename>
+        <filename>install.sql</filename>
+        <filename>access.xml</filename>
+        <filename>config.xml</filename>
+        <folder>bearleague</folder>
+        <folder>color_piker</folder>
+        <folder>helpers</folder>
+        <folder>fields</folder>
+        <folder>Language</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>js</folder>
+        <folder>css</folder>
+        <folder>classes</folder>
+        <folder>includes</folder>
+        <folder>controllers</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">Language/BE/en-GB.com_joomsport.ini</language>
+        <language tag="fr-FR">Language/BE/fr-FR.com_joomsport.ini</language>
+        <language tag="it-IT">Language/BE/it-IT.com_joomsport.ini</language>
+        <language tag="ru-RU">Language/BE/ru-RU.com_joomsport.ini</language>
+        <language tag="el-GR">Language/BE/el-GR.com_joomsport.ini</language>
+        <language tag="es-ES">Language/BE/es-ES.com_joomsport.ini</language>
+        <language tag="de-DE">Language/BE/de-DE.com_joomsport.ini</language>
+        <language tag="sv-SE">Language/BE/sv-SE.com_joomsport.ini</language>
+        <language tag="pt-PT">Language/BE/pt-PT.com_joomsport.ini</language>
+        <language tag="pl-PL">Language/BE/pl-PL.com_joomsport.ini</language>
+        <language tag="nl-NL">Language/BE/nl-NL.com_joomsport.ini</language>
+        <language tag="hu-HU">Language/BE/hu-HU.com_joomsport.ini</language>
+        <language tag="cs-CZ">Language/BE/cs-CZ.com_joomsport.ini</language>
+        <language tag="sk-SK">Language/BE/sk-SK.com_joomsport.ini</language> 
+        <language tag="sl-SI">Language/BE/sl-SI.com_joomsport.ini</language>
+        <language tag="vi-VI">Language/BE/vi-VI.com_joomsport.ini</language>
+        <language tag="zh-CN">Language/BE/zh-CN.com_joomsport.ini</language>
+        <language tag="lv-LV">Language/BE/lv-LV.com_joomsport.ini</language>
+        <language tag="ar-AA">Language/BE/ar-AA.com_joomsport.ini</language>
+        <language tag="bg-BG">Language/BE/bg-BG.com_joomsport.ini</language>
+        <language tag="en-GB">Language/en-GB/en-GB.com_joomsport.menu.ini</language>
+        <language tag="fr-FR">Language/fr-FR/fr-FR.com_joomsport.menu.ini</language>
+        <language tag="it-IT">Language/it-IT/it-IT.com_joomsport.menu.ini</language>
+        <language tag="el-GR">Language/el-GR/el-GR.com_joomsport.menu.ini</language>
+        <language tag="es-ES">Language/es-ES/es-ES.com_joomsport.menu.ini</language>
+
+        <language tag="sv-SE">Language/sv-SE/sv-SE.com_joomsport.menu.ini</language>
+        <language tag="pt-PT">Language/pt-PT/pt-PT.com_joomsport.menu.ini</language>
+        <language tag="pl-PL">Language/pl-PL/pl-PL.com_joomsport.menu.ini</language>
+        <language tag="nl-NL">Language/nl-NL/nl-NL.com_joomsport.menu.ini</language>
+        <language tag="hu-HU">Language/hu-HU/hu-HU.com_joomsport.menu.ini</language>
+        <language tag="cs-CZ">Language/cs-CZ/cs-CZ.com_joomsport.menu.ini</language>
+        <language tag="sl-SI">Language/sl-SI/sl-SI.com_joomsport.menu.ini</language>
+        <language tag="sv-SE">Language/sv-SE/sv-SE.com_joomsport.menu.ini</language>
+        <language tag="vi-VI">Language/vi-VI/vi-VI.com_joomsport.menu.ini</language>
+        <language tag="zh-CN">Language/zh-CN/zh-CN.com_joomsport.menu.ini</language>
+        <language tag="lv-LV">Language/lv-LV/lv-LV.com_joomsport.menu.ini</language>
+        <language tag="ar-AA">Language/ar-AA/ar-AA.com_joomsport.menu.ini</language>
+        <language tag="en-GB">Language/en-GB/en-GB.com_joomsport.sys.ini</language>
+        <language tag="fr-FR">Language/fr-FR/fr-FR.com_joomsport.sys.ini</language>
+        <language tag="it-IT">Language/it-IT/it-IT.com_joomsport.sys.ini</language>
+        <language tag="ru-RU">Language/ru-RU/ru-RU.com_joomsport.sys.ini</language>
+        <language tag="el-GR">Language/el-GR/el-GR.com_joomsport.sys.ini</language>
+        <language tag="es-ES">Language/es-ES/es-ES.com_joomsport.sys.ini</language>
+        <language tag="de-DE">Language/de-DE/de-DE.com_joomsport.sys.ini</language>
+        <language tag="sv-SE">Language/sv-SE/sv-SE.com_joomsport.sys.ini</language>
+        <language tag="pt-PT">Language/pt-PT/pt-PT.com_joomsport.sys.ini</language>
+        <language tag="pl-PL">Language/pl-PL/pl-PL.com_joomsport.sys.ini</language>
+        <language tag="nl-NL">Language/nl-NL/nl-NL.com_joomsport.sys.ini</language>
+        <language tag="hu-HU">Language/hu-HU/hu-HU.com_joomsport.sys.ini</language>
+        <language tag="cs-CZ">Language/cs-CZ/cs-CZ.com_joomsport.sys.ini</language>
+        <language tag="sl-SI">Language/sl-SI/sl-SI.com_joomsport.sys.ini</language>
+        <language tag="sv-SE">Language/sv-SE/sv-SE.com_joomsport.sys.ini</language>
+        <language tag="vi-VI">Language/vi-VI/vi-VI.com_joomsport.sys.ini</language>
+        <language tag="zh-CN">Language/zh-CN/zh-CN.com_joomsport.sys.ini</language>
+        <language tag="lv-LV">Language/lv-LV/lv-LV.com_joomsport.sys.ini</language>
+        <language tag="ar-AA">Language/ar-AA/ar-AA.com_joomsport.sys.ini</language>
+        <language tag="bg-BG">Language/bg-BG/bg-BG.com_joomsport.sys.ini</language>
+    </languages>
+  </administration>
+  <updateservers>
+            <server type="extension" priority="2" name="Update JoomSport">http://joomsport.com/jsupdate.xml</server>
+  </updateservers>
+</extension>
